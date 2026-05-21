@@ -1,4 +1,3 @@
-import java.util.Map;
 import java.util.concurrent.Semaphore;
 
 
@@ -9,35 +8,83 @@ public class general extends Thread {
     int nuestraDistancia = 0;
     float indiceCriticidad = 0;
     static Semaphore mutex = new Semaphore(1);
-    static Semaphore choque = new Semaphore(1);
-    static Semaphore salio = new Semaphore(0);
-    static Semaphore recargando = new Semaphore(1);
-    Map<String, Integer> mapaDistancias = Map.of(
-        "Hospital", 100,
-        "Datacenter", 150,
-        "Escuela", 200,     //El segundo valor queda distancia(metros o asi) o queda en segundos, a definir
-        "Aereopuerto", 250,
-        "Deposito Militar", 300
-    );
-
-    public float calcularIndiceDeCriticidad(float indiceCriticidad, int distancia, int nuestraDistancia) {
-        indiceCriticidad = (float) distancia / nuestraDistancia; // pensado en distancia en metros, pero se puede adaptar a tiempo si se prefiere
-        return indiceCriticidad;
-    }
-
+    static Semaphore choqueMisil = new Semaphore(1);
+    static Semaphore salioMisil = new Semaphore(0);
+    static Semaphore recargandoMisil = new Semaphore(1);
     
-    /*
-    if (indiceCriticidad + mapaDistancias.get("Hospital") < indiceCriticidad + mapaDistancias.get("Datacenter") && indiceCriticidad + mapaDistancias.get("Hospital") < indiceCriticidad + mapaDistancias.get("Escuela") && indiceCriticidad + mapaDistancias.get("Hospital") < indiceCriticidad + mapaDistancias.get("Aereopuerto") && indiceCriticidad + mapaDistancias.get("Hospital") < indiceCriticidad + mapaDistancias.get("Deposito Militar")) {
-        // Priorizar Hospital
-    } else if (indiceCriticidad + mapaDistancias.get("Datacenter") < indiceCriticidad + mapaDistancias.get("Escuela") && indiceCriticidad + mapaDistancias.get("Datacenter") < indiceCriticidad + mapaDistancias.get("Aereopuerto") && indiceCriticidad + mapaDistancias.get("Datacenter") < indiceCriticidad + mapaDistancias.get("Deposito Militar")) {
-        // Priorizar Datacenter
-    } else if (indiceCriticidad + mapaDistancias.get("Escuela") < indiceCriticidad + mapaDistancias.get("Aereopuerto") && indiceCriticidad + mapaDistancias.get("Escuela") < indiceCriticidad + mapaDistancias.get("Deposito Militar")) {
-        // Priorizar Escuela
-    } else if (indiceCriticidad + mapaDistancias.get("Aereopuerto") < indiceCriticidad + mapaDistancias.get("Deposito Militar")) {
-        // Priorizar Aereopuerto
-    } else {
-        // Priorizar Deposito Militar
+    // Primera tarea a realizar: tomando en cuenta ambas variables, si distancia o tiempo, poder calcular el indice de criticidad
+    // segun la zona elegida de forma simplificada, con la clase zona  ya esta medio solucionado
+
+    // Segunda tarea: Crear una clase Misil que cree misiles para ambos lados
+    // Crear una clase que CargueMisil para leer txt con misiles enemigos
+
+    // patron observador
+    public class Zona {
+        String nombre;
+        int distancia;
+        int criticidad;
+
+        public Zona(String nombre, int distancia, int criticidad) {
+            this.nombre = nombre;
+            this.distancia = distancia;
+            this.criticidad = criticidad;
+        }
+
+        public String getNombre() { 
+            return nombre; 
+        }
+        
+        public int getCriticidad() { 
+            return criticidad; 
+        }
+
+        public int getDistancia() { 
+            return distancia; 
+        }
+
+        // Ejemplo de uso:
+        // Zona Hospital = new Zona("Hospital", 500, 5);
     }
-    */
+
+    public class Misil {
+        String nombre;
+        int distancia;
+        int tiempo;
+        float indiceCriticidad;
+
+        public Misil(String nombre, int distancia, int tiempo) {
+            this.nombre = nombre;
+            this.distancia = distancia;
+            this.tiempo = tiempo;
+            this.indiceCriticidad = calcularIndiceDeCriticidad(distancia, nuestraDistancia);
+        }
+
+        public float calcularIndiceDeCriticidad(int distancia, int nuestraDistancia) {
+            return (float) distancia - nuestraDistancia; 
+            // pensado en distancia en metros, pero se puede adaptar a tiempo si se prefiere
+        }
+        // ↑ Como le agrego el tiempo a esto? O lo dejo solo con la distancia?     
+        // O hago un indice de criticidad que combine ambos factores?
+    
+
+        public String getNombre() { 
+            return nombre; 
+        }
+        
+        public int getDistancia() { 
+            return distancia; 
+        }
+
+        public int getTiempo() { 
+            return tiempo; 
+        }
+
+        public float getIndiceCriticidad() { 
+            return indiceCriticidad; 
+        }
+
+        // Ejemplo de uso:
+        // Misil misil1 = new Misil("Misil1", 500, 10);
+    }
 
 }
