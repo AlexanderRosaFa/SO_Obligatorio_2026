@@ -14,11 +14,11 @@ public class MisilAliado extends Thread {
         while (!objetivo.estaDestruido()) {
             reloj.esperarTick();
 
-            posicion += 5;  // ✅ el aliado avanza hacia el enemigo
+            posicion += 5;  
 
             System.out.println("Aliado -> posición: " + posicion);
 
-            int posicionEnemigo = objetivo.getPosicion(); // ✅ nombre distinto, sin shadowing
+            int posicionEnemigo = objetivo.getPosicion(); 
 
             if (posicion >= posicionEnemigo) {
                 objetivo.destruir();

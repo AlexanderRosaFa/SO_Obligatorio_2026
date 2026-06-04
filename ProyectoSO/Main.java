@@ -2,30 +2,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        RelojGlobal reloj = new RelojGlobal();
+        RelojGlobal reloj = new RelojGlobal(100); // el reloj se detendrá después de 100 ticks
+        CreadorDeEnemigos creador = new CreadorDeEnemigos(reloj, "Misiles.txt"); 
 
-        // Inicia el reloj global
         reloj.start();
-
-        // CreadorDeEnemigos lee el archivo y lanza los misiles en el tick correcto
-        CreadorDeEnemigos creador = new CreadorDeEnemigos(reloj, "Misiles.txt");
         creador.start();
 
-        // Después de 3 ticks, lanzamos un misil aliado contra el primer enemigo activo
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        // Espera un tick para que el creador cargue los misiles
+        try { Thread.sleep(1500); } catch (InterruptedException e) { e.printStackTrace(); }
 
-        // Busca el primer misil enemigo ya lanzado y lo intercepta
-        for (MisilEnemigo enemigo : creador.getMisiles()) {
-            if (enemigo.isAlive() && !enemigo.estaDestruido()) {
-                MisilAliado aliado = new MisilAliado(enemigo, reloj);
-                aliado.start();
-                System.out.println("Misil aliado lanzado contra " + enemigo.getNombre());
-                break;
-            }
-        }
+        ControladorAliado controlador = new ControladorAliado(creador.getMisiles(), reloj);
+        controlador.start();
     }
 }

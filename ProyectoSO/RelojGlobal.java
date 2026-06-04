@@ -2,11 +2,16 @@ public class RelojGlobal extends Thread {
 
     private int tiempo = 0;
     private boolean ejecutando = true;
+    private static int TiempoFinal; // tiempo máximo para el reloj
+
+    public RelojGlobal(int TiempoFinal) {
+        this.TiempoFinal = TiempoFinal;
+    }
 
     @Override
     public void run() {
 
-        while (ejecutando) {
+        while (tiempo < TiempoFinal && ejecutando) {
 
             try {
                 Thread.sleep(1000); // 1 segundo real
