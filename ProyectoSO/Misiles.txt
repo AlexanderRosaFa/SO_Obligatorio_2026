@@ -1,0 +1,3 @@
+Misil-A, 2, Ciudad1
+Misil-B, 5, Ciudad2
+Misil-C, 8, Ciudad3
