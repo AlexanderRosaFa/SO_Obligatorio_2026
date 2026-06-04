@@ -1,0 +1,84 @@
+[20:27:57.241] Interceptor-2 inicializado [DISPONIBLE]
+[20:27:57.241] Interceptor-1 inicializado [DISPONIBLE]
+[20:27:57.241] Simulación en curso...
+[20:27:58.022] [GEN] M-01 detectada -> Aeropuerto Nacional  | vida=7,0s | cola=1
+[20:27:58.022] [PLAN] Procesando M-01 -> Aeropuerto Nacional | prio=50,58 | libre = 2
+[20:27:58.023] [PLAN] M-01 -> Interceptor-1
+[20:27:58.028] Interceptor-1 INTERCEPTANDO M-01 -> Aeropuerto Nacional  (prio=50,58)
+[20:27:58.837] Interceptor-1 RECARGANDO (5s)...
+[20:27:59.165] [PLAN] Procesando M-02 -> Aeropuerto Nacional | prio=50,58 | libre = 1
+[20:27:59.168] [PLAN] M-02 -> Interceptor-1
+[20:27:59.165] [GEN] M-02 detectada -> Aeropuerto Nacional  | vida=6,3s | cola=0
+[20:27:59.810] [GEN] M-03 detectada -> Aeropuerto Nacional  | vida=3,4s | cola=1
+[20:27:59.810] [PLAN] Procesando M-03 -> Aeropuerto Nacional | prio=50,58 | libre = 0
+[20:28:00.966] [GEN] M-04 detectada -> Depósito Militar     | vida=6,7s | cola=1
+[20:28:01.915] [GEN] M-05 detectada -> Depósito Militar     | vida=6,6s | cola=2
+[20:28:02.428] [GEN] M-06 detectada -> Hospital Secundario  | vida=6,9s | cola=3
+[20:28:03.121] [GEN] M-07 detectada -> Hospital Principal   | vida=6,7s | cola=4
+[20:28:03.244] [PLAN] Sin interceptores para M-03 — probable impacto
+[20:28:03.245] [PLAN] Procesando M-07 -> Hospital Principal | prio=51,34 | libre = 0
+[20:28:03.747] [GEN] M-08 detectada -> Depósito Militar     | vida=6,7s | cola=4
+[20:28:03.839] Interceptor-1 DISPONIBLE  [intercep=1]
+[20:28:03.840] [PLAN] M-07 -> Interceptor-1
+[20:28:03.840] Interceptor-1 INTERCEPTANDO M-02 -> Aeropuerto Nacional  (prio=50,58)
+[20:28:03.841] [PLAN] Procesando M-04 -> Depósito Militar | prio=25,42 | libre = 0
+[20:28:04.642] Interceptor-1 RECARGANDO (5s)...
+[20:28:04.683] [GEN] M-09 detectada -> Aeropuerto Nacional  | vida=7,1s | cola=4
+[20:28:05.419] [GEN] M-10 detectada -> Escuela Central      | vida=4,8s | cola=5
+[20:28:06.163] [GEN] M-11 detectada -> Escuela Central      | vida=3,0s | cola=6
+[20:28:07.143] [GEN] M-12 detectada -> Aeropuerto Nacional  | vida=4,3s | cola=7
+[20:28:07.678] [PLAN] Sin interceptores para M-04 — probable impacto
+[20:28:07.678] [PLAN] Procesando M-11 -> Escuela Central | prio=50,93 | libre = 0
+[20:28:08.258] [GEN] M-13 detectada -> Escuela Central      | vida=7,4s | cola=7
+[20:28:09.112] [GEN] M-14 detectada -> Escuela Central      | vida=7,4s | cola=8
+[20:28:09.181] [PLAN] Sin interceptores para M-11 — probable impacto
+[20:28:09.184] [PLAN] Limpieza: 1 amenazas inactivas removidas
+[20:28:09.185] [PLAN] Procesando M-10 -> Escuela Central | prio=50,94 | libre = 0
+[20:28:09.644] Interceptor-1 DISPONIBLE  [intercep=2]
+[20:28:09.644] [PLAN] M-10 -> Interceptor-1
+[20:28:09.644] Interceptor-1 INTERCEPTANDO M-07 -> Hospital Principal  (prio=51,34)
+[20:28:09.644] [PLAN] Limpieza: 1 amenazas inactivas removidas
+[20:28:09.645] [PLAN] Procesando M-13 -> Escuela Central | prio=50,91 | libre = 0
+[20:28:10.058] [GEN] M-15 detectada -> Aeropuerto Nacional  | vida=5,1s | cola=5
+[20:28:10.446] Interceptor-1 RECARGANDO (5s)...
+[20:28:11.059] [GEN] M-16 detectada -> Escuela Central      | vida=5,5s | cola=6
+[20:28:11.813] [GEN] M-17 detectada -> Depósito Militar     | vida=4,6s | cola=7
+[20:28:12.628] [GEN] M-18 detectada -> Hospital Secundario  | vida=7,1s | cola=8
+[20:28:13.429] [GEN] M-19 detectada -> Escuela Central      | vida=5,8s | cola=9
+[20:28:14.132] [GEN] M-20 detectada -> Hospital Principal   | vida=6,6s | cola=10
+[20:28:14.133] [GEN] Generador finalizado — total=20
+[20:28:15.448] Interceptor-1 DISPONIBLE  [intercep=3]
+[20:28:15.448] [PLAN] M-13 -> Interceptor-1
+[20:28:15.448] Interceptor-1 INTERCEPTANDO M-10 -> Escuela Central  (prio=50,94)
+[20:28:15.449] [PLAN] Limpieza: 4 amenazas inactivas removidas
+[20:28:15.449] [PLAN] Procesando M-20 -> Hospital Principal | prio=51,34 | libre = 0
+[20:28:16.256] Interceptor-1 RECARGANDO (5s)...
+[20:28:20.693] [PLAN] Sin interceptores para M-20 — probable impacto
+[20:28:20.693] [PLAN] Limpieza: 5 amenazas inactivas removidas
+[20:28:21.266] Interceptor-1 DISPONIBLE  [intercep=4]
+[20:28:21.267] Interceptor-1 INTERCEPTANDO M-13 -> Escuela Central  (prio=50,91)
+[20:28:22.070] Interceptor-1 RECARGANDO (5s)...
+[20:28:27.076] Interceptor-1 DISPONIBLE  [intercep=5]
+[20:28:27.260] ════════════════════════════════════════════════════════════
+[20:28:27.260]   REPORTE FINAL – Escenario: SATURADO
+[20:28:27.260] ════════════════════════════════════════════════════════════
+[20:28:27.261]   Zona                   Critic.  Detect.  Neutr.   Impact. 
+[20:28:27.262]   ──────────────────────────────────────────────────────────
+[20:28:27.262]   Hospital Principal     URGENTE  2        1        1       
+[20:28:27.263]   Escuela Central        URGENTE  6        0        6       
+[20:28:27.263]   Aeropuerto Nacional    URGENTE  6        2        4       
+[20:28:27.263]   Depósito Militar       MEDIA    4        0        4       
+[20:28:27.265]   Datacenter Norte       BAJA     0        0        0       
+[20:28:27.265]   Hospital Secundario    BAJA     2        0        2       
+[20:28:27.265]   ──────────────────────────────────────────────────────────
+[20:28:27.266]   TOTALES                         20       3        17      
+[20:28:27.266] 
+  Tasa de éxito: 15,0%
+[20:28:27.266]   Impactos:      17 / 20 amenazas
+[20:28:27.267] 
+  Interceptores:
+[20:28:27.267]     Interceptor-1 -> 5 intercep.
+[20:28:27.267]     Interceptor-2 -> 0 intercep.
+[20:28:27.267] 
+  Logs guardados en: logs/sim_saturado.log
+[20:28:27.267] ════════════════════════════════════════════════════════════
