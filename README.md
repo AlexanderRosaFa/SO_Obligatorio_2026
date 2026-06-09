@@ -1,3 +1,245 @@
+
+# Sistema Concurrente de Intercepción de Amenazas Aéreas
+
+## Resumen General
+
+El sistema simula la detección e intercepción de amenazas aéreas dirigidas a distintas zonas protegidas. Las amenazas aparecen durante la simulación, son evaluadas según su prioridad y pueden ser interceptadas por recursos limitados antes de impactar sobre sus objetivos.
+
+La solución utiliza concurrencia mediante múltiples hilos que representan amenazas, controladores y mecanismos de control temporal.
+
+---
+
+# Arquitectura Actual
+
+## Hilos Existentes
+
+### RelojGlobal
+
+Responsable de avanzar el tiempo de la simulación y sincronizar el comportamiento general del sistema.
+
+### MisilEnemigo
+
+Cada amenaza posee su propio hilo. Sus responsabilidades son:
+
+* Esperar su instante de aparición.
+* Activarse cuando corresponda.
+* Reducir su tiempo restante hasta el impacto.
+* Informar si fue interceptada o impactó.
+
+### ControladorAliado
+
+Actúa como planificador principal del sistema.
+
+Responsabilidades:
+
+* Analizar amenazas activas.
+* Seleccionar cuál debe ser atendida.
+* Crear los hilos de intercepción.
+
+### MisilAliado
+
+Hilo creado por el controlador para interceptar una amenaza específica.
+
+---
+
+# Recursos Compartidos
+
+## Lista de amenazas
+
+Contiene todas las amenazas activas del sistema.
+
+Es utilizada simultáneamente por:
+
+* Misiles enemigos.
+* Controlador.
+* Misiles aliados.
+
+## Tiempo global
+
+Valor compartido utilizado por todos los hilos para coordinar sus acciones.
+
+## Estadísticas
+
+Contadores globales utilizados para registrar:
+
+* Amenazas generadas.
+* Amenazas interceptadas.
+* Amenazas impactadas.
+* Otras métricas de la simulación.
+
+---
+
+# Competencia Entre Hilos
+
+## MisilEnemigo vs Controlador
+
+Ambos acceden a la lista de amenazas.
+
+Problema:
+Mientras el controlador analiza la lista, una nueva amenaza puede ser agregada simultáneamente.
+
+## MisilEnemigo vs MisilAliado
+
+Ambos modifican el estado de una amenaza.
+
+Problema:
+Una amenaza podría impactar al mismo tiempo que un interceptor intenta destruirla.
+
+## Todos los hilos vs Estadísticas
+
+Varios hilos pueden actualizar contadores simultáneamente.
+
+Problema:
+Pueden perderse actualizaciones si no existe sincronización.
+
+---
+
+# Requisitos Pendientes Importantes
+
+## 1. Criticidad de zonas
+
+Implementar una clase Zona con niveles de criticidad.
+
+Ejemplo:
+
+* Hospital = 100
+* Central Eléctrica = 90
+* Aeropuerto = 80
+* Escuela = 70
+* Zona Industrial = 50
+
+---
+
+## 2. Prioridad combinada
+
+La prioridad debe considerar:
+
+* Criticidad de la zona.
+* Tiempo restante hasta el impacto.
+
+La fórmula debe ser definida y justificada.
+
+---
+
+## 3. Múltiples estrategias de planificación
+
+Implementar al menos:
+
+### Estrategia 1
+
+Menor tiempo hasta el impacto.
+
+### Estrategia 2
+
+Mayor criticidad.
+
+### Estrategia 3
+
+Prioridad combinada.
+
+El usuario debe poder elegir cuál utilizar.
+
+---
+
+## 4. Recursos limitados de intercepción
+
+Actualmente los interceptores se crean bajo demanda.
+
+Para cumplir completamente con la letra debería existir una cantidad fija de recursos de intercepción.
+
+Ejemplo:
+
+* Interceptor 1
+* Interceptor 2
+* Interceptor 3
+
+Cada uno atendiendo una sola amenaza a la vez.
+
+---
+
+## 5. Tiempo de recarga
+
+Después de una intercepción el recurso debe permanecer ocupado durante un tiempo fijo antes de volver a estar disponible.
+
+---
+
+## 6. Estados de las amenazas
+
+Implementar estados explícitos:
+
+* PENDIENTE
+* ASIGNADA
+* INTERCEPTADA
+* IMPACTADA
+
+---
+
+## 7. Cola de prioridad
+
+Reemplazar listas simples por una estructura de prioridad que permita seleccionar amenazas según la estrategia elegida.
+
+---
+
+## 8. Registro de eventos
+
+Generar un archivo de log.
+
+Ejemplos:
+
+* Aparición de amenazas.
+* Asignaciones.
+* Intercepciones.
+* Impactos.
+
+---
+
+## 9. Estadísticas finales
+
+Mostrar al finalizar:
+
+* Amenazas generadas.
+* Amenazas interceptadas.
+* Amenazas impactadas.
+* Tiempo promedio de espera.
+* Utilización de recursos.
+* Métricas asociadas a criticidad.
+
+---
+
+# Posible Evolución de la Arquitectura
+
+Versión actual:
+
+* RelojGlobal
+* ControladorAliado
+* MisilesEnemigos
+* MisilesAliados creados bajo demanda
+
+Versión recomendada:
+
+* RelojGlobal
+* ControladorAliado
+* MisilesEnemigos
+* Interceptor 1
+* Interceptor 2
+* Interceptor 3
+
+Esta segunda alternativa representa mejor la limitación real de recursos exigida por el obligatorio.
+
+---
+
+# Aspectos Clave para Defender en la Entrega
+
+* Uso real de concurrencia.
+* Existencia de recursos compartidos.
+* Necesidad de sincronización.
+* Competencia por recursos.
+* Planificación de amenazas.
+* Uso de prioridades.
+* Comparación entre estrategias.
+* Medición estadística de resultados.
+
+
 # Sincronización del Tiempo de Simulación (Mejora Propuesta)
 
 ## Problema Detectado
