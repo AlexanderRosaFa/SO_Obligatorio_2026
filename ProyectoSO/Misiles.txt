@@ -1,0 +1,7 @@
+Misil-A,  2,  Hospital
+Misil-B,  5,  Escuela
+Misil-C,  8,  Aeropuerto
+Misil-D,  3,  DepositoMilitar
+Misil-E,  6,  CentralElectrica
+Misil-F, 10,  Hospital
+Misil-G, 12,  ZonaIndustrial
