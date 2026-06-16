@@ -6,13 +6,16 @@ public class Main {
     List<Interceptor> listaInterceptores = new ArrayList<>();
 
     public static void main(String[] args) {
+        int TiempoDeEspera = 5;
+        int CantidadDeInterceptores = 3;
+
         RelojGlobal reloj = new RelojGlobal(30);
         Estadisticas estadisticas = new Estadisticas();
         CreadorDeEnemigos creador = new CreadorDeEnemigos(reloj, "src/Archivos/MisilesTest1.txt", estadisticas);
         creador.start();
         List<Interceptor> interceptores = new ArrayList<>();
-        for (int i = 1; i <= 5; i++) {
-            Interceptor interceptor = new Interceptor("Interceptor" + i, reloj, estadisticas);
+        for (int i = 1; i <= CantidadDeInterceptores; i++) {
+            Interceptor interceptor = new Interceptor("Interceptor - " + i, reloj, estadisticas,TiempoDeEspera );
             interceptores.add(interceptor);
             interceptor.start();
         }

@@ -8,20 +8,29 @@ public class Interceptor extends Thread {
     private Estadisticas estadisticas;
     private boolean disponible = true; // Indica si el interceptor está disponible para ser asignado a un misil
     private boolean activo = true; // Indica si el interceptor está activo (no destruido)
+    private boolean enEspera = false; 
     private int ticksHastaImpacto; // Ticks restantes para que el misil alcance su objetivo
+    private int tiempoDeEspera;
+    private int tiempoEsperando = 0;
 
-    public Interceptor(String nombre, RelojGlobal reloj, Estadisticas estadisticas) {
+    public Interceptor(String nombre, RelojGlobal reloj, Estadisticas estadisticas, int tiempoDeEspera) {
         this.nombre = nombre;
         this.reloj = reloj;
         this.estadisticas = estadisticas;
+        this.tiempoDeEspera = tiempoDeEspera;
         reloj.registrar();
     }
 
 
     public void run() {
-        while (activo && reloj.estaActivo()) {
+        while (reloj.estaActivo()) {
             reloj.esperarTick();
-            if (!disponible && objetivo != null) {
+            if (enEspera){
+                tiempoEsperando--;
+                if (tiempoEsperando == 0){
+                    enEspera = false;
+                } 
+            }else if (!disponible && objetivo != null) {
                 perseguir();
             }
         }
@@ -47,6 +56,9 @@ public class Interceptor extends Thread {
                 objetivo.destruir();
                 objetivo = null;
                 disponible = true;
+                enEspera = true;
+                tiempoEsperando = tiempoDeEspera; 
+
         }
         
     }
@@ -57,11 +69,10 @@ public class Interceptor extends Thread {
     public MisilEnemigo getObjetivo() { return objetivo; }
     public int getTicksHastaImpacto() { return ticksHastaImpacto; }
 
-    public boolean isDisponible() { return disponible; }
+    public boolean isDisponible() { return disponible && !enEspera; }
     public boolean isActivo() { return activo; }
 
     public void setObjetivo(MisilEnemigo objetivo) { this.objetivo = objetivo; }
-    public void setDisponible(boolean disponible) { this.disponible = disponible; }
     public void setActivo(boolean activo) { this.activo = activo; }
 
 

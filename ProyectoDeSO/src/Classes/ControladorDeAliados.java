@@ -26,6 +26,9 @@ public class ControladorDeAliados extends Thread {
             reloj.esperarTick();
             while((misilEnemigo = cola.siguiente(misilesEnemigos)) != null) {
                 AsignarInterceptor(misilEnemigo);
+                if (buscarInterceptorLibre() == null) {
+                    break; // esperar al próximo tick
+                }
             }
         }
         reloj.darseDeBaja(); // El controlador de aliados se da de baja del reloj al finalizar su ciclo de vida

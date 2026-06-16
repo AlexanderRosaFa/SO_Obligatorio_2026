@@ -8,7 +8,6 @@ public class MisilEnemigo extends Thread {
     private int ticksHastaImpacto;
     private RelojGlobal reloj;
     private String estado = "Esperando"; // Estados: "Esperando", "Activo", "Destruido", "Impactado"
-    private boolean activo = true;
     private Estadisticas estadisticas;
 
     public MisilEnemigo(String nombre, Zona objetivo, int tickDeAparicion, int ticksHastaImpacto, RelojGlobal reloj, Estadisticas estadisticas) {
@@ -38,7 +37,7 @@ public class MisilEnemigo extends Thread {
         }
 
         // Si está atendido, esperar a que el interceptor resuelva
-        while (estado.equals("Atendido")) {
+        while (estado.equals("Atendido") && reloj.estaActivo()) {
             reloj.esperarTick();
         }
 
