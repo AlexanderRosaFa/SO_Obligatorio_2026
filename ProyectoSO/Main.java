@@ -14,9 +14,9 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-        String escenario = args.length > 0 ? args[0].toLowerCase() : "saturado";
-        String estratNom = args.length > 1 ? args[1].toLowerCase() : "tiempo";
-
+        String escenario = args.length > 0 ? args[0].toLowerCase() : "normal";
+        String estratNom = args.length > 1 ? args[1].toLowerCase() : "hibrida";
+        
         if (estratNom.equals("ambas")) {
             // Ejecutar ambas estrategias y mostrar comparativa
             System.out.println("\n>>> ESTRATEGIA: TIEMPO_RESTANTE <<<\n");
@@ -52,8 +52,8 @@ public class Main {
 
         // ── Creador de misiles enemigos ────────────────────────────────
         CreadorDeEnemigos creador = saturado
-                ? new CreadorDeEnemigos(reloj, cola, zonas, "Misiles.txt", extrasAleatorios, 42L)
-                : new CreadorDeEnemigos(reloj, cola, zonas, "Misiles.txt");
+                ? new CreadorDeEnemigos(reloj, cola, zonas, "C:\\Facu\\Sistema Operativo\\SO_Obligatorio_2026\\ProyectoSO\\Misiles.txt", extrasAleatorios, 42L)
+                : new CreadorDeEnemigos(reloj, cola, zonas, "C:\\Facu\\Sistema Operativo\\SO_Obligatorio_2026\\ProyectoSO\\Misiles.txt");
 
         // ── Controlador aliado (planificador + asignador) ──────────────
         ControladorAliado controlador = new ControladorAliado(cola, reloj, estrategia);
