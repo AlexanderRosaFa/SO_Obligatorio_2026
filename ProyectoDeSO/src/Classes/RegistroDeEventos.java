@@ -10,7 +10,7 @@ public class RegistroDeEventos {
 
     static {
         try {
-            writer = new PrintWriter(new BufferedWriter(new FileWriter("src/Archivos/Logs", false)));
+            writer = new PrintWriter(new BufferedWriter(new FileWriter("ProyectoDeSO/src/Archivos/Logs", false)));
         } catch (IOException e) {
             System.err.println("[LOG] No se pudo abrir el archivo de log: " + e.getMessage());
         }

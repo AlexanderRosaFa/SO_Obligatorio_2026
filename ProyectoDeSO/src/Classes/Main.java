@@ -9,9 +9,10 @@ public class Main {
         int TiempoDeEspera = 5;
         int CantidadDeInterceptores = 3;
 
-        RelojGlobal reloj = new RelojGlobal(30);
+        RelojGlobal reloj = new RelojGlobal(100);
         Estadisticas estadisticas = new Estadisticas();
-        CreadorDeEnemigos creador = new CreadorDeEnemigos(reloj, "src/Archivos/MisilesTest1.txt", estadisticas);
+        ExportadorResultados.inicializarArchivo();
+        CreadorDeEnemigos creador = new CreadorDeEnemigos(reloj, "ProyectoDeSO/src/Archivos/Misiles200.txt", estadisticas);
         creador.start();
         List<Interceptor> interceptores = new ArrayList<>();
         for (int i = 1; i <= CantidadDeInterceptores; i++) {
@@ -28,6 +29,7 @@ public class Main {
         } catch (InterruptedException e) {}
         estadisticas.mostrarEstadisticas();
         RegistroDeEventos.cerrar();
+        ExportadorResultados.guardarResultado(estadisticas);
 
     }
 
