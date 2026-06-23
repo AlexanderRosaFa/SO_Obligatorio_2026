@@ -1,476 +1,90 @@
-[1] M124 ha aparecido con objetivo Base
-[3] M57 ha aparecido con objetivo Base
-[3] M74 ha aparecido con objetivo Puerto
-[3] M182 ha aparecido con objetivo Puerto
-[3] M183 ha aparecido con objetivo Puerto
-[3] M61 ha aparecido con objetivo Central
-[3] No es factible interceptar M124. Se ignora el misil.
-[3] No es factible interceptar M183. Se ignora el misil.
-[3] No es factible interceptar M61. Se ignora el misil.
-[3] No es factible interceptar M74. Se ignora el misil.
-[3] No es factible interceptar M57. Se ignora el misil.
-[3] No es factible interceptar M182. Se ignora el misil.
-[4] M36 ha aparecido con objetivo Base
-[4] M53 ha aparecido con objetivo Puerto
-[5] No es factible interceptar M36. Se ignora el misil.
-[5] M130 ha aparecido con objetivo Hospital
-[5] No es factible interceptar M53. Se ignora el misil.
-[5] Interceptor Interceptor - 1 asignado a M130
-[6] M151 ha aparecido con objetivo Central
-[6] M165 ha aparecido con objetivo Hospital
-[6] M160 ha aparecido con objetivo Base
-[6] M121 ha aparecido con objetivo Base
-[7] M125 ha aparecido con objetivo Central
-[7] M75 ha aparecido con objetivo Puerto
-[7] M80 ha aparecido con objetivo Aeropuerto
-[7] Interceptor Interceptor - 2 asignado a M165
-[7] Interceptor Interceptor - 3 asignado a M80
-[7] No es factible interceptar M75. Se ignora el misil.
-[9] M43 ha aparecido con objetivo Puerto
-[9] M6 ha aparecido con objetivo Aeropuerto
-[9] M8 ha aparecido con objetivo Central
-[9] M183 alcanzó su objetivo Puerto
-[9] M104 ha aparecido con objetivo Hospital
-[10] M61 alcanzó su objetivo Central
-[10] M95 ha aparecido con objetivo Base
-[12] M25 ha aparecido con objetivo Puerto
-[12] M109 ha aparecido con objetivo Central
-[12] M191 ha aparecido con objetivo Aeropuerto
-[12] M116 ha aparecido con objetivo Central
-[12] M74 alcanzó su objetivo Puerto
-[13] M163 ha aparecido con objetivo Central
-[13] M75 alcanzó su objetivo Puerto
-[13] M160 alcanzó su objetivo Base
-[14] M57 alcanzó su objetivo Base
-[14] M77 ha aparecido con objetivo Central
-[15] M151 alcanzó su objetivo Central
-[15] M133 ha aparecido con objetivo Aeropuerto
-[15] M123 ha aparecido con objetivo Puerto
-[15] M81 ha aparecido con objetivo Central
-[15] M102 ha aparecido con objetivo Central
-[16] M41 ha aparecido con objetivo Base
-[16] M69 ha aparecido con objetivo Puerto
-[16] M68 ha aparecido con objetivo Aeropuerto
-[17] M106 ha aparecido con objetivo Central
-[17] No es factible interceptar M104. Se ignora el misil.
-[18] M125 alcanzó su objetivo Central
-[18] M109 alcanzó su objetivo Central
-[18] Interceptor - 1 interceptó a M130
-[19] M77 alcanzó su objetivo Central
-[19] M130 fue destruido antes de impactar en Hospital
-[19] M36 alcanzó su objetivo Base
-[19] M104 alcanzó su objetivo Hospital
-[20] M84 ha aparecido con objetivo Aeropuerto
-[20] M95 alcanzó su objetivo Base
-[20] M182 alcanzó su objetivo Puerto
-[20] M8 alcanzó su objetivo Central
-[21] M124 alcanzó su objetivo Base
-[21] M163 alcanzó su objetivo Central
-[21] M30 ha aparecido con objetivo Base
-[21] M4 ha aparecido con objetivo Aeropuerto
-[21] Interceptor - 3 interceptó a M80
-[21] No es factible interceptar M191. Se ignora el misil.
-[22] M164 ha aparecido con objetivo Central
-[22] M81 alcanzó su objetivo Central
-[22] M41 alcanzó su objetivo Base
-[22] M80 fue destruido antes de impactar en Aeropuerto
-[22] No es factible interceptar M6. Se ignora el misil.
-[22] Interceptor - 2 interceptó a M165
-[22] M165 fue destruido antes de impactar en Hospital
-[23] M47 ha aparecido con objetivo Central
-[23] No es factible interceptar M68. Se ignora el misil.
-[23] Interceptor Interceptor - 1 asignado a M4
-[24] M115 ha aparecido con objetivo Puerto
-[24] M170 ha aparecido con objetivo Aeropuerto
-[24] M43 alcanzó su objetivo Puerto
-[24] M54 ha aparecido con objetivo Puerto
-[24] M53 alcanzó su objetivo Puerto
-[25] M72 ha aparecido con objetivo Hospital
-[25] M139 ha aparecido con objetivo Central
-[25] M121 alcanzó su objetivo Base
-[25] No es factible interceptar M170. Se ignora el misil.
-[26] M29 ha aparecido con objetivo Aeropuerto
-[26] M191 alcanzó su objetivo Aeropuerto
-[26] M69 alcanzó su objetivo Puerto
-[26] M68 alcanzó su objetivo Aeropuerto
-[26] M193 ha aparecido con objetivo Aeropuerto
-[26] M102 alcanzó su objetivo Central
-[26] Interceptor Interceptor - 2 asignado a M72
-[26] No es factible interceptar M29. Se ignora el misil.
-[26] Interceptor Interceptor - 3 asignado a M84
-[27] M6 alcanzó su objetivo Aeropuerto
-[28] M22 ha aparecido con objetivo Puerto
-[28] No es factible interceptar M133. Se ignora el misil.
-[28] M32 ha aparecido con objetivo Base
-[29] M27 ha aparecido con objetivo Puerto
-[29] M70 ha aparecido con objetivo Aeropuerto
-[30] M98 ha aparecido con objetivo Hospital
-[30] M112 ha aparecido con objetivo Hospital
-[30] M13 ha aparecido con objetivo Central
-[30] M62 ha aparecido con objetivo Puerto
-[31] M170 alcanzó su objetivo Aeropuerto
-[31] M2 ha aparecido con objetivo Puerto
-[31] M180 ha aparecido con objetivo Hospital
-[31] M58 ha aparecido con objetivo Hospital
-[31] M94 ha aparecido con objetivo Aeropuerto
-[31] M29 alcanzó su objetivo Aeropuerto
-[31] M25 alcanzó su objetivo Puerto
-[31] M123 alcanzó su objetivo Puerto
-[31] M116 alcanzó su objetivo Central
-[33] M195 ha aparecido con objetivo Aeropuerto
-[33] M85 ha aparecido con objetivo Hospital
-[33] M50 ha aparecido con objetivo Puerto
-[33] M30 alcanzó su objetivo Base
-[33] M174 ha aparecido con objetivo Central
-[33] M111 ha aparecido con objetivo Base
-[34] M139 alcanzó su objetivo Central
-[34] M133 alcanzó su objetivo Aeropuerto
-[34] Interceptor - 1 interceptó a M4
-[34] Interceptor - 3 interceptó a M84
-[34] No es factible interceptar M112. Se ignora el misil.
-[34] M21 ha aparecido con objetivo Hospital
-[34] M84 fue destruido antes de impactar en Aeropuerto
-[35] M4 fue destruido antes de impactar en Aeropuerto
-[35] M112 alcanzó su objetivo Hospital
-[35] M103 ha aparecido con objetivo Aeropuerto
-[35] M128 ha aparecido con objetivo Aeropuerto
-[36] M106 alcanzó su objetivo Central
-[36] M164 alcanzó su objetivo Central
-[36] M140 ha aparecido con objetivo Hospital
-[36] M193 alcanzó su objetivo Aeropuerto
-[36] M56 ha aparecido con objetivo Puerto
-[36] M27 alcanzó su objetivo Puerto
-[36] M47 alcanzó su objetivo Central
-[37] M120 ha aparecido con objetivo Central
-[37] M175 ha aparecido con objetivo Central
-[37] M142 ha aparecido con objetivo Hospital
-[37] M78 ha aparecido con objetivo Base
-[38] M111 alcanzó su objetivo Base
-[38] M76 ha aparecido con objetivo Base
-[38] M174 alcanzó su objetivo Central
-[38] M166 ha aparecido con objetivo Hospital
-[39] M177 ha aparecido con objetivo Base
-[39] M89 ha aparecido con objetivo Central
-[39] Interceptor Interceptor - 1 asignado a M85
-[39] Interceptor Interceptor - 3 asignado a M98
-[40] M63 ha aparecido con objetivo Aeropuerto
-[40] M189 ha aparecido con objetivo Hospital
-[40] M67 ha aparecido con objetivo Puerto
-[40] M35 ha aparecido con objetivo Aeropuerto
-[40] M131 ha aparecido con objetivo Aeropuerto
-[40] M50 alcanzó su objetivo Puerto
-[40] Interceptor - 2 interceptó a M72
-[41] M94 alcanzó su objetivo Aeropuerto
-[41] M122 ha aparecido con objetivo Hospital
-[41] M3 ha aparecido con objetivo Puerto
-[41] M72 fue destruido antes de impactar en Hospital
-[41] M149 ha aparecido con objetivo Hospital
-[42] M115 alcanzó su objetivo Puerto
-[42] M146 ha aparecido con objetivo Central
-[43] M13 alcanzó su objetivo Central
-[43] M158 ha aparecido con objetivo Hospital
-[43] M7 ha aparecido con objetivo Central
-[43] M119 ha aparecido con objetivo Aeropuerto
-[43] Interceptor - 1 interceptó a M85
-[43] M145 ha aparecido con objetivo Puerto
-[43] M2 alcanzó su objetivo Puerto
-[44] M15 ha aparecido con objetivo Central
-[44] M103 alcanzó su objetivo Aeropuerto
-[44] M23 ha aparecido con objetivo Puerto
-[44] M128 alcanzó su objetivo Aeropuerto
-[44] M54 alcanzó su objetivo Puerto
-[44] M85 fue destruido antes de impactar en Hospital
-[45] M131 alcanzó su objetivo Aeropuerto
-[45] Interceptor - 3 interceptó a M98
-[45] Interceptor Interceptor - 2 asignado a M58
-[46] M98 fue destruido antes de impactar en Hospital
-[46] M55 ha aparecido con objetivo Aeropuerto
-[46] M186 ha aparecido con objetivo Base
-[46] M181 ha aparecido con objetivo Base
-[46] No es factible interceptar M180. Se ignora el misil.
-[47] M22 alcanzó su objetivo Puerto
-[47] M126 ha aparecido con objetivo Base
-[47] M194 ha aparecido con objetivo Base
-[47] M76 alcanzó su objetivo Base
-[47] M11 ha aparecido con objetivo Hospital
-[47] M62 alcanzó su objetivo Puerto
-[47] M32 alcanzó su objetivo Base
-[47] M175 alcanzó su objetivo Central
-[47] M35 alcanzó su objetivo Aeropuerto
-[47] M180 alcanzó su objetivo Hospital
-[47] M3 alcanzó su objetivo Puerto
-[47] M73 ha aparecido con objetivo Aeropuerto
-[47] Interceptor Interceptor - 1 asignado a M21
-[49] M56 alcanzó su objetivo Puerto
-[49] M10 ha aparecido con objetivo Base
-[49] M171 ha aparecido con objetivo Base
-[49] M70 alcanzó su objetivo Aeropuerto
-[49] M88 ha aparecido con objetivo Base
-[50] M179 ha aparecido con objetivo Aeropuerto
-[50] M150 ha aparecido con objetivo Central
-[50] Interceptor - 2 interceptó a M58
-[50] No es factible interceptar M142. Se ignora el misil.
-[50] Interceptor Interceptor - 3 asignado a M122
-[50] M9 ha aparecido con objetivo Central
-[51] M58 fue destruido antes de impactar en Hospital
-[51] M200 ha aparecido con objetivo Hospital
-[51] M142 alcanzó su objetivo Hospital
-[52] No es factible interceptar M140. Se ignora el misil.
-[52] Interceptor - 1 interceptó a M21
-[53] M132 ha aparecido con objetivo Base
-[53] M96 ha aparecido con objetivo Hospital
-[53] M155 ha aparecido con objetivo Aeropuerto
-[53] M146 alcanzó su objetivo Central
-[53] M21 fue destruido antes de impactar en Hospital
-[53] M117 ha aparecido con objetivo Puerto
-[53] M195 alcanzó su objetivo Aeropuerto
-[53] M67 alcanzó su objetivo Puerto
-[53] No es factible interceptar M166. Se ignora el misil.
-[53] M140 alcanzó su objetivo Hospital
-[54] M44 ha aparecido con objetivo Hospital
-[54] M166 alcanzó su objetivo Hospital
-[53] M120 alcanzó su objetivo Central
-[54] M12 ha aparecido con objetivo Central
-[55] M9 alcanzó su objetivo Central
-[55] Interceptor - 3 interceptó a M122
-[55] No es factible interceptar M200. Se ignora el misil.
-[55] Interceptor Interceptor - 2 asignado a M189
-[55] M122 fue destruido antes de impactar en Hospital
-[56] M167 ha aparecido con objetivo Puerto
-[56] M45 ha aparecido con objetivo Hospital
-[56] M63 alcanzó su objetivo Aeropuerto
-[56] M200 alcanzó su objetivo Hospital
-[56] M49 ha aparecido con objetivo Central
-[56] M89 alcanzó su objetivo Central
-[57] M1 ha aparecido con objetivo Puerto
-[57] M79 ha aparecido con objetivo Central
-[57] M153 ha aparecido con objetivo Hospital
-[57] M78 alcanzó su objetivo Base
-[56] M177 alcanzó su objetivo Base
-[57] M176 ha aparecido con objetivo Hospital
-[57] M129 ha aparecido con objetivo Puerto
-[57] M73 alcanzó su objetivo Aeropuerto
-[57] M186 alcanzó su objetivo Base
-[58] M144 ha aparecido con objetivo Aeropuerto
-[58] No es factible interceptar M158. Se ignora el misil.
-[58] Interceptor Interceptor - 1 asignado a M11
-[59] M55 alcanzó su objetivo Aeropuerto
-[59] M51 ha aparecido con objetivo Puerto
-[59] M150 alcanzó su objetivo Central
-[59] M178 ha aparecido con objetivo Puerto
-[59] M154 ha aparecido con objetivo Base
-[59] M138 ha aparecido con objetivo Aeropuerto
-[60] M181 alcanzó su objetivo Base
-[60] M158 alcanzó su objetivo Hospital
+[5] M19 ha aparecido con objetivo Aeropuerto
+[6] M8 ha aparecido con objetivo Hospital
+[7] Interceptor Interceptor - 1 asignado a M19
+[7] Interceptor Interceptor - 2 asignado a M8
+[11] M9 ha aparecido con objetivo Escuela
+[11] M6 ha aparecido con objetivo CentralElectrica
+[12] M2 ha aparecido con objetivo Hospital
+[12] Interceptor Interceptor - 3 asignado a M6
+[20] Interceptor - 2 interceptó a M8
+[21] M8 fue destruido antes de impactar en Hospital
+[21] Interceptor - 1 interceptó a M19
+[22] M19 fue destruido antes de impactar en Aeropuerto
+[23] M9 alcanzó su objetivo Escuela
+[25] Interceptor Interceptor - 2 asignado a M2
+[25] Interceptor - 3 interceptó a M6
+[27] M6 fue destruido antes de impactar en CentralElectrica
+[28] M1 ha aparecido con objetivo Aeropuerto
+[29] Interceptor Interceptor - 1 asignado a M1
+[31] Interceptor - 2 interceptó a M2
+[32] M2 fue destruido antes de impactar en Hospital
+[34] M4 ha aparecido con objetivo ZonaIndustrial
+[34] M24 ha aparecido con objetivo Aeropuerto
+[35] Interceptor Interceptor - 3 asignado a M24
+[35] M20 ha aparecido con objetivo CentralElectrica
+[36] No es factible interceptar M4. Se ignora el misil.
+[36] Interceptor Interceptor - 2 asignado a M20
+[40] M4 alcanzó su objetivo ZonaIndustrial
+[43] Interceptor - 3 interceptó a M24
+[44] M24 fue destruido antes de impactar en Aeropuerto
+[44] Interceptor - 1 interceptó a M1
+[44] Interceptor - 2 interceptó a M20
+[45] M20 fue destruido antes de impactar en CentralElectrica
+[45] M1 fue destruido antes de impactar en Aeropuerto
+[46] M3 ha aparecido con objetivo Hospital
+[47] M7 ha aparecido con objetivo Datacenter
+[48] M12 ha aparecido con objetivo Aeropuerto
+[48] Interceptor Interceptor - 3 asignado a M3
+[49] M10 ha aparecido con objetivo Hospital
+[50] Interceptor Interceptor - 1 asignado a M10
+[50] Interceptor Interceptor - 2 asignado a M12
+[51] No es factible interceptar M7. Se ignora el misil.
+[58] M7 alcanzó su objetivo Datacenter
 [60] M16 ha aparecido con objetivo Aeropuerto
-[60] M20 ha aparecido con objetivo Aeropuerto
-[60] M145 alcanzó su objetivo Puerto
-[60] M132 alcanzó su objetivo Base
-[60] M173 ha aparecido con objetivo Aeropuerto
-[60] M197 ha aparecido con objetivo Hospital
-[60] M194 alcanzó su objetivo Base
-[60] Interceptor - 2 interceptó a M189
-[60] No es factible interceptar M149. Se ignora el misil.
-[60] Interceptor Interceptor - 3 asignado a M153
-[61] M23 alcanzó su objetivo Puerto
-[61] M31 ha aparecido con objetivo Aeropuerto
-[61] M119 alcanzó su objetivo Aeropuerto
-[61] M156 ha aparecido con objetivo Hospital
-[61] M114 ha aparecido con objetivo Aeropuerto
-[61] M189 fue destruido antes de impactar en Hospital
-[61] M149 alcanzó su objetivo Hospital
-[61] M97 ha aparecido con objetivo Base
-[61] M171 alcanzó su objetivo Base
-[61] M15 alcanzó su objetivo Central
-[62] M137 ha aparecido con objetivo Central
-[62] M7 alcanzó su objetivo Central
-[62] M155 alcanzó su objetivo Aeropuerto
-[62] Interceptor - 1 interceptó a M11
-[63] M11 fue destruido antes de impactar en Hospital
-[63] M14 ha aparecido con objetivo Central
-[64] M1 alcanzó su objetivo Puerto
-[64] M154 alcanzó su objetivo Base
-[64] M82 ha aparecido con objetivo Central
-[64] M167 alcanzó su objetivo Puerto
-[65] M141 ha aparecido con objetivo Puerto
-[65] M108 ha aparecido con objetivo Puerto
-[66] M12 alcanzó su objetivo Central
-[66] No es factible interceptar M197. Se ignora el misil.
-[66] Interceptor Interceptor - 2 asignado a M45
-[66] Interceptor - 3 interceptó a M153
-[67] M197 alcanzó su objetivo Hospital
-[67] M153 fue destruido antes de impactar en Hospital
-[67] M126 alcanzó su objetivo Base
-[68] M117 alcanzó su objetivo Puerto
-[68] M14 alcanzó su objetivo Central
-[68] M138 alcanzó su objetivo Aeropuerto
-[68] M88 alcanzó su objetivo Base
-[68] Interceptor Interceptor - 1 asignado a M96
-[68] M31 alcanzó su objetivo Aeropuerto
-[69] M10 alcanzó su objetivo Base
-[69] M16 alcanzó su objetivo Aeropuerto
-[69] M42 ha aparecido con objetivo Puerto
-[69] M49 alcanzó su objetivo Central
-[69] M17 ha aparecido con objetivo Base
-[68] M168 ha aparecido con objetivo Aeropuerto
-[69] M48 ha aparecido con objetivo Base
-[70] M20 alcanzó su objetivo Aeropuerto
-[70] M179 alcanzó su objetivo Aeropuerto
-[70] M82 alcanzó su objetivo Central
-[71] M51 alcanzó su objetivo Puerto
-[71] No es factible interceptar M176. Se ignora el misil.
-[71] Interceptor Interceptor - 3 asignado a M44
-[71] M79 alcanzó su objetivo Central
-[72] M64 ha aparecido con objetivo Central
-[72] M59 ha aparecido con objetivo Central
-[72] No es factible interceptar M156. Se ignora el misil.
-[72] M178 alcanzó su objetivo Puerto
-[73] M90 ha aparecido con objetivo Puerto
-[73] M173 alcanzó su objetivo Aeropuerto
-[73] M199 ha aparecido con objetivo Central
-[73] M176 alcanzó su objetivo Hospital
-[73] M52 ha aparecido con objetivo Central
-[73] Interceptor - 2 interceptó a M45
-[73] Interceptor - 1 interceptó a M96
-[73] No es factible interceptar M144. Se ignora el misil.
-[74] M156 alcanzó su objetivo Hospital
-[74] M147 ha aparecido con objetivo Aeropuerto
-[74] M45 fue destruido antes de impactar en Hospital
-[74] M17 alcanzó su objetivo Base
-[73] M96 fue destruido antes de impactar en Hospital
-[74] M113 ha aparecido con objetivo Puerto
-[74] M97 alcanzó su objetivo Base
-[75] No es factible interceptar M114. Se ignora el misil.
-[75] Interceptor - 3 interceptó a M44
-[75] M143 ha aparecido con objetivo Base
-[76] M172 ha aparecido con objetivo Central
-[76] M190 ha aparecido con objetivo Hospital
-[76] M44 fue destruido antes de impactar en Hospital
-[76] M39 ha aparecido con objetivo Hospital
-[76] M152 ha aparecido con objetivo Base
-[76] M129 alcanzó su objetivo Puerto
-[76] M18 ha aparecido con objetivo Central
-[78] M105 ha aparecido con objetivo Puerto
-[78] M144 alcanzó su objetivo Aeropuerto
-[78] M87 ha aparecido con objetivo Base
-[78] M141 alcanzó su objetivo Puerto
-[78] Interceptor Interceptor - 2 asignado a M39
-[79] M90 alcanzó su objetivo Puerto
-[79] M34 ha aparecido con objetivo Aeropuerto
-[79] Interceptor Interceptor - 1 asignado a M190
-[80] M113 alcanzó su objetivo Puerto
-[80] M157 ha aparecido con objetivo Puerto
-[80] M114 alcanzó su objetivo Aeropuerto
-[80] M187 ha aparecido con objetivo Aeropuerto
-[80] Interceptor Interceptor - 3 asignado a M34
-[81] M101 ha aparecido con objetivo Puerto
-[81] M161 ha aparecido con objetivo Aeropuerto
-[81] M159 ha aparecido con objetivo Puerto
-[81] M83 ha aparecido con objetivo Base
-[81] M92 ha aparecido con objetivo Aeropuerto
-[81] M188 ha aparecido con objetivo Aeropuerto
-[82] M18 alcanzó su objetivo Central
-[82] M137 alcanzó su objetivo Central
-[82] No es factible interceptar M168. Se ignora el misil.
-[83] M19 ha aparecido con objetivo Hospital
-[83] M60 ha aparecido con objetivo Central
-[83] M134 ha aparecido con objetivo Hospital
-[83] M59 alcanzó su objetivo Central
-[85] M93 ha aparecido con objetivo Puerto
-[85] M108 alcanzó su objetivo Puerto
-[85] M172 alcanzó su objetivo Central
-[86] M42 alcanzó su objetivo Puerto
-[86] M83 alcanzó su objetivo Base
-[87] M118 ha aparecido con objetivo Puerto
-[87] M168 alcanzó su objetivo Aeropuerto
-[87] M64 alcanzó su objetivo Central
-[87] M37 ha aparecido con objetivo Base
-[88] M100 ha aparecido con objetivo Hospital
-[88] Interceptor - 3 interceptó a M34
-[89] M169 ha aparecido con objetivo Base
-[89] M5 ha aparecido con objetivo Central
-[89] M188 alcanzó su objetivo Aeropuerto
-[89] M48 alcanzó su objetivo Base
-[89] M34 fue destruido antes de impactar en Aeropuerto
-[89] M199 alcanzó su objetivo Central
-[89] M52 alcanzó su objetivo Central
-[90] M66 ha aparecido con objetivo Puerto
-[89] M87 alcanzó su objetivo Base
-[90] M40 ha aparecido con objetivo Hospital
-[90] Interceptor - 2 interceptó a M39
-[91] M107 ha aparecido con objetivo Puerto
-[91] M99 ha aparecido con objetivo Puerto
-[91] M152 alcanzó su objetivo Base
-[91] M39 fue destruido antes de impactar en Hospital
-[91] M136 ha aparecido con objetivo Base
-[91] M46 ha aparecido con objetivo Central
-[91] M147 alcanzó su objetivo Aeropuerto
-[91] No es factible interceptar M134. Se ignora el misil.
-[92] M101 alcanzó su objetivo Puerto
-[92] M93 alcanzó su objetivo Puerto
-[92] M38 ha aparecido con objetivo Central
-[92] M105 alcanzó su objetivo Puerto
-[92] M92 alcanzó su objetivo Aeropuerto
-[92] M135 ha aparecido con objetivo Central
-[92] M134 alcanzó su objetivo Hospital
-[93] M187 alcanzó su objetivo Aeropuerto
-[93] Interceptor Interceptor - 3 asignado a M100
-[93] Interceptor - 1 interceptó a M190
-[94] M190 fue destruido antes de impactar en Hospital
-[94] M71 ha aparecido con objetivo Puerto
-[95] M118 alcanzó su objetivo Puerto
-[95] Interceptor Interceptor - 2 asignado a M19
-[95] M161 alcanzó su objetivo Aeropuerto
-[95] M110 ha aparecido con objetivo Central
-[95] M91 ha aparecido con objetivo Base
-[95] M143 alcanzó su objetivo Base
-[96] M196 ha aparecido con objetivo Puerto
-[97] M184 ha aparecido con objetivo Base
-[97] M28 ha aparecido con objetivo Hospital
-[97] M192 ha aparecido con objetivo Puerto
-[97] M162 ha aparecido con objetivo Aeropuerto
-[97] M24 ha aparecido con objetivo Puerto
-[97] M26 ha aparecido con objetivo Hospital
-[97] M157 alcanzó su objetivo Puerto
-[97] M65 ha aparecido con objetivo Central
-[98] M5 alcanzó su objetivo Central
-[98] M127 ha aparecido con objetivo Central
-[98] M86 ha aparecido con objetivo Base
-[98] M198 ha aparecido con objetivo Aeropuerto
-[99] M169 alcanzó su objetivo Base
-[99] M33 ha aparecido con objetivo Puerto
-[99] Interceptor Interceptor - 1 asignado a M28
-[100] M46 alcanzó su objetivo Central
-[100] M148 ha aparecido con objetivo Aeropuerto
-[100] M185 ha aparecido con objetivo Puerto
-[100] No es factible interceptar M46. Se ignora el misil.
-[100] M65 alcanzó su objetivo Central
-[100] M91 alcanzó su objetivo Base
-[100] M107 alcanzó su objetivo Puerto
-[100] M40 alcanzó su objetivo Hospital
-[100] M135 alcanzó su objetivo Central
-[100] M136 alcanzó su objetivo Base
-[100] M26 alcanzó su objetivo Hospital
-[100] M66 alcanzó su objetivo Puerto
-[100] M184 alcanzó su objetivo Base
-[100] M192 alcanzó su objetivo Puerto
-[100] M100 alcanzó su objetivo Hospital
-[100] M38 alcanzó su objetivo Central
-[100] M196 alcanzó su objetivo Puerto
-[100] M60 alcanzó su objetivo Central
-[100] M99 alcanzó su objetivo Puerto
-[100] M162 alcanzó su objetivo Aeropuerto
-[100] M24 alcanzó su objetivo Puerto
-[100] M110 alcanzó su objetivo Central
-[100] M37 alcanzó su objetivo Base
-[100] M159 alcanzó su objetivo Puerto
-[100] M28 alcanzó su objetivo Hospital
-[100] M148 alcanzó su objetivo Aeropuerto
-[100] M185 alcanzó su objetivo Puerto
-[100] M86 alcanzó su objetivo Base
-[100] M198 alcanzó su objetivo Aeropuerto
-[100] Interceptor - 3 interceptó a M100
-[100] M33 alcanzó su objetivo Puerto
-[100] M19 alcanzó su objetivo Hospital
-[100] M127 alcanzó su objetivo Central
-[100] M71 alcanzó su objetivo Puerto
+[63] Interceptor - 3 interceptó a M3
+[63] Interceptor - 1 interceptó a M10
+[64] M10 fue destruido antes de impactar en Hospital
+[64] M3 fue destruido antes de impactar en Hospital
+[65] Interceptor - 2 interceptó a M12
+[66] M12 fue destruido antes de impactar en Aeropuerto
+[68] Interceptor Interceptor - 1 asignado a M16
+[69] M5 ha aparecido con objetivo CentralElectrica
+[70] Interceptor Interceptor - 2 asignado a M5
+[73] M21 ha aparecido con objetivo Aeropuerto
+[74] Interceptor Interceptor - 3 asignado a M21
+[78] M14 ha aparecido con objetivo Hospital
+[78] Interceptor - 2 interceptó a M5
+[78] M5 fue destruido antes de impactar en CentralElectrica
+[79] Interceptor - 1 interceptó a M16
+[80] M16 fue destruido antes de impactar en Aeropuerto
+[82] M11 ha aparecido con objetivo CentralElectrica
+[82] M17 ha aparecido con objetivo Escuela
+[83] M23 ha aparecido con objetivo CentralElectrica
+[83] Interceptor Interceptor - 2 asignado a M14
+[84] Interceptor Interceptor - 1 asignado a M11
+[84] M22 ha aparecido con objetivo Aeropuerto
+[86] M13 ha aparecido con objetivo Aeropuerto
+[89] Interceptor - 3 interceptó a M21
+[90] M21 fue destruido antes de impactar en Aeropuerto
+[90] Interceptor - 2 interceptó a M14
+[90] M14 fue destruido antes de impactar en Hospital
+[94] M15 ha aparecido con objetivo Datacenter
+[94] M17 alcanzó su objetivo Escuela
+[94] Interceptor Interceptor - 3 asignado a M23
+[95] No es factible interceptar M13. Se ignora el misil.
+[95] Interceptor Interceptor - 2 asignado a M22
+[96] M25 ha aparecido con objetivo Aeropuerto
+[99] M13 alcanzó su objetivo Aeropuerto
+[99] M18 ha aparecido con objetivo Escuela
+[99] Interceptor - 1 interceptó a M11
+[99] M11 fue destruido antes de impactar en CentralElectrica
+[103] Interceptor - 3 interceptó a M23
+[103] No es factible interceptar M25. Se ignora el misil.
+[104] M23 fue destruido antes de impactar en CentralElectrica
+[104] No es factible interceptar M18. Se ignora el misil.
+[104] No es factible interceptar M15. Se ignora el misil.
+[105] M18 alcanzó su objetivo Escuela
+[105] M15 alcanzó su objetivo Datacenter
+[105] M25 alcanzó su objetivo Aeropuerto
+[105] M22 alcanzó su objetivo Aeropuerto
+[105] Interceptor - 2 interceptó a M22

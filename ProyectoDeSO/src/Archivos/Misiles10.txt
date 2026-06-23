@@ -1,10 +1,10 @@
 M1,Hospital,4,13
 M2,Aeropuerto,29,9
 M3,Hospital,87,7
-M4,Base,55,6
+M4,ZonaIndustrial,55,6
 M5,Hospital,12,11
 M6,Aeropuerto,65,5
-M7,Base,26,18
+M7,Escuela,26,18
 M8,Aeropuerto,58,13
 M9,Hospital,98,10
-M10,Central,44,13
+M10,CentralElectrica,44,13
