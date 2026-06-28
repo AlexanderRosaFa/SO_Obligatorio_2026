@@ -1,7 +1,6 @@
 package Classes;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
@@ -11,20 +10,6 @@ public class Main {
     private static int tiempoDeEspera = 5;
     private static int cantidadDeInterceptores = 3;
     private static final Scanner sc = new Scanner(System.in);
-
-    // Mapa de zonas configurable. Si ZONAS vive en otra clase, reemplazá esto
-    // por una referencia a esa clase (ej: MapaDeZonas.ZONAS) y ajustá los getters/setters.
-    private static final Map<String, Zona> ZONAS = new LinkedHashMap<>();
-
-    static {
-        ZONAS.put("Hospital", new Zona("Hospital", "URGENTE", 100, 1));
-        ZONAS.put("CentralElectrica", new Zona("CentralElectrica", "URGENTE", 90, 2));
-        ZONAS.put("Aeropuerto", new Zona("Aeropuerto", "ALTO", 80, 3));
-        ZONAS.put("Escuela", new Zona("Escuela", "ALTO", 70, 5));
-        ZONAS.put("ZonaIndustrial", new Zona("ZonaIndustrial", "MEDIO", 50, 3));
-        ZONAS.put("DepositoMilitar", new Zona("DepositoMilitar", "MEDIO", 50, 1));
-        ZONAS.put("Datacenter", new Zona("Datacenter", "BAJO", 30, 4));
-    }
 
     public static void main(String[] args) {
         if (!menuPrincipal()) {
@@ -101,11 +86,11 @@ public class Main {
             System.out.println("╠══════════════════════════════════════════════╣");
             System.out.println("║  Interceptores: " + cantidadDeInterceptores
                     + " | Tiempo de recarga: " + tiempoDeEspera + "s        ║");
-            System.out.println("║  1 - Cambiar cantidad de interceptores       ║");
-            System.out.println("║  2 - Cambiar tiempo de recarga               ║");
-            System.out.println("║  3 - Configurar tiempo de las zonas          ║");
-            System.out.println("║  4 - Continuar                               ║");
-            System.out.println("║  5 - Volver al menú principal                ║");
+            System.out.println("║  1 - Cambiar cantidad de interceptores        ║");
+            System.out.println("║  2 - Cambiar tiempo de recarga                ║");
+            System.out.println("║  3 - Configurar tiempo de las zonas           ║");
+            System.out.println("║  4 - Continuar                                ║");
+            System.out.println("║  5 - Volver al menú principal                 ║");
             System.out.println("╚══════════════════════════════════════════════╝");
             System.out.print("Opción (1/2/3/4/5): ");
 
@@ -149,16 +134,16 @@ public class Main {
     private static void menuZonas() {
         while (true) {
             System.out.println("╔══════════════════════════════════════════════╗");
-            System.out.println("║       CONFIGURACIÓN DE TIEMPO POR ZONA       ║");
+            System.out.println("║   CONFIGURACIÓN DE TICKS DESDE BASE POR ZONA  ║");
             System.out.println("╠══════════════════════════════════════════════╣");
 
-            List<String> nombres = new ArrayList<>(ZONAS.keySet());
+            List<String> nombres = new ArrayList<>(RegistroDeZonas.ZONAS.keySet());
             for (int i = 0; i < nombres.size(); i++) {
-                Zona z = ZONAS.get(nombres.get(i));
+                Zona z = RegistroDeZonas.ZONAS.get(nombres.get(i));
                 System.out.println("║  " + (i + 1) + " - " + z.getNombre()
-                        + " (tiempo actual: " + z.getTicksDesdeBase() + ")");
+                        + " (ticks actuales: " + z.getTicksDesdeBase() + ")");
             }
-            System.out.println("║  0 - Volver                                  ║");
+            System.out.println("║  0 - Volver                                   ║");
             System.out.println("╚══════════════════════════════════════════════╝");
             System.out.print("Seleccione la zona a modificar: ");
 
@@ -171,14 +156,14 @@ public class Main {
                 continue;
             }
 
-            Zona zonaElegida = ZONAS.get(nombres.get(opcion - 1));
-            System.out.print("Ingrese el nuevo tiempo para " + zonaElegida.getNombre() + ": ");
-            int nuevoTiempo = leerOpcion(zonaElegida.getTicksDesdeBase());
-            if (nuevoTiempo > 0) {
-                zonaElegida.setTicksDesdeBase(nuevoTiempo);
-                System.out.println("Tiempo de " + zonaElegida.getNombre() + " actualizado a " + nuevoTiempo + ".");
+            Zona zonaElegida = RegistroDeZonas.ZONAS.get(nombres.get(opcion - 1));
+            System.out.print("Ingrese los nuevos ticks desde base para " + zonaElegida.getNombre() + ": ");
+            int nuevosTicks = leerOpcion(zonaElegida.getTicksDesdeBase());
+            if (nuevosTicks > 0) {
+                zonaElegida.setTicksDesdeBase(nuevosTicks);
+                System.out.println("Ticks de " + zonaElegida.getNombre() + " actualizados a " + nuevosTicks + ".");
             } else {
-                System.out.println("Valor inválido, se mantiene el tiempo actual.");
+                System.out.println("Valor inválido, se mantienen los ticks actuales.");
             }
         }
     }

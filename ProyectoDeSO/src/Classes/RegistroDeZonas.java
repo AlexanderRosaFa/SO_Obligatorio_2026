@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegistroDeZonas {
-    private static final Map<String, Zona> ZONAS = new HashMap<>();
+    public static final Map<String, Zona> ZONAS = new HashMap<>();
 
     static {
         ZONAS.put("Hospital", new Zona("Hospital","URGENTE", 100, 1));
@@ -14,6 +14,7 @@ public class RegistroDeZonas {
         ZONAS.put("DepositoMilitar", new Zona("DepositoMilitar","MEDIO", 50, 1));
         ZONAS.put("Datacenter",new Zona("Datacenter","BAJO",30, 4));
     }
+
 
     public static Zona obtener(String nombre) {
         return ZONAS.getOrDefault(nombre, new Zona(nombre, "BAJO", 30, 35));
