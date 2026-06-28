@@ -12,12 +12,12 @@ public class ControladorDeAliados extends Thread {
     private List<MisilEnemigo> misilesEnemigos;
     private ColaDePrioridad cola;
     
-    public ControladorDeAliados(RelojGlobal reloj, Estadisticas estadisticas, List<Interceptor> interceptores, List<MisilEnemigo> misilesEnemigos) {
+    public ControladorDeAliados(RelojGlobal reloj, Estadisticas estadisticas, List<Interceptor> interceptores, List<MisilEnemigo> misilesEnemigos, ColaDePrioridad cola) {
         this.reloj = reloj;
         this.estadisticas = estadisticas;
         this.interceptoresDisponibles = interceptores;
         this.misilesEnemigos = misilesEnemigos;
-        this.cola = new ColaDePrioridad();
+        this.cola = cola;
         reloj.registrar();
     }
 

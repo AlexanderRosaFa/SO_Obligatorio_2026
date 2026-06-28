@@ -6,6 +6,10 @@ import java.util.PriorityQueue;
 
 
 public class ColaDePrioridad {
+    private String estrategia;
+    public ColaDePrioridad(String estrategia) {
+        this.estrategia = estrategia;
+    }
 
     public MisilEnemigo siguiente(List<MisilEnemigo> misilesEnemigos) {
         PriorityQueue<MisilEnemigo> cola = new PriorityQueue<>(comparador());
@@ -18,10 +22,16 @@ public class ColaDePrioridad {
     }
 
     private Comparator<MisilEnemigo> comparador() {
-        return Comparator.comparingDouble((MisilEnemigo m) -> {
-            double criticidad = m.getObjetivo().getValorCriticidad(); // normalizar si es necesario
-            double urgencia   = 1.0 / m.getTicksHastaImpacto();      // invertir: menos ticks = más urgente
-            return 0.6 * criticidad + 0.4 * urgencia;
-        }).reversed();
+        if ("MENOR_TIEMPO".equals(estrategia)) {
+            return Comparator.comparingInt(MisilEnemigo::getTicksHastaImpacto);
+        } else if ("MAYOR_CRITICIDAD".equals(estrategia)) {
+            return Comparator.comparingDouble((MisilEnemigo m) -> m.getObjetivo().getValorCriticidad()).reversed();
+        }else {
+            return Comparator.comparingDouble((MisilEnemigo m) -> {
+                double criticidad = m.getObjetivo().getValorCriticidad(); // normalizar si es necesario
+                double urgencia   = 1.0 / m.getTicksHastaImpacto();      // invertir: menos ticks = más urgente
+                return 0.6 * criticidad + 0.4 * urgencia;
+            }).reversed();
+        }
     }
 }
