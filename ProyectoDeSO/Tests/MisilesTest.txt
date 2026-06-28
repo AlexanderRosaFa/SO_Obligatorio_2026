@@ -1,0 +1,2 @@
+M1,Hospital,3,10
+M2,Escuela,5,8

@@ -1,0 +1,18 @@
+[2] M1 ha aparecido con objetivo Hospital
+[3] Interceptor Interceptor - 1 asignado a M1
+[4] M2 ha aparecido con objetivo Aeropuerto
+[5] M3 ha aparecido con objetivo Escuela
+[5] Interceptor Interceptor - 2 asignado a M2
+[5] No es factible interceptar M3. Se ignora el misil.
+[7] M4 ha aparecido con objetivo CentralElectrica
+[8] Interceptor Interceptor - 3 asignado a M4
+[9] M5 ha aparecido con objetivo Datacenter
+[11] M3 alcanzó su objetivo Escuela
+[11] Interceptor - 1 interceptó a M1
+[11] M1 fue destruido antes de impactar en Hospital
+[12] No es factible interceptar M5. Se ignora el misil.
+[17] Interceptor - 2 interceptó a M2
+[18] M2 fue destruido antes de impactar en Aeropuerto
+[18] Interceptor - 3 interceptó a M4
+[19] M4 fue destruido antes de impactar en CentralElectrica
+[20] M5 alcanzó su objetivo Datacenter
