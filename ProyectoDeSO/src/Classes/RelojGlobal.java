@@ -22,7 +22,7 @@ public class RelojGlobal extends Thread {
             phaserReloj.arriveAndAwaitAdvance();
         }
         ejecutando = false;
-        phaserReloj.forceTermination(); // ← agregar esto
+        phaserReloj.forceTermination();
     }
 
     public void registrar() { phaserReloj.register(); }
