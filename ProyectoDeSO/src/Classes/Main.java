@@ -20,7 +20,7 @@ public class Main {
         String estrategia = elegirEstrategia();
 
         ColaDePrioridad cola = new ColaDePrioridad(estrategia);
-        RelojGlobal reloj = new RelojGlobal(105);
+        RelojGlobal reloj = new RelojGlobal(200);
         Estadisticas estadisticas = new Estadisticas();
         ExportadorResultados.inicializarArchivo();
 
@@ -85,12 +85,12 @@ public class Main {
             System.out.println("║   SISTEMA DE INTERCEPCIÓN DE AMENAZAS AÉREAS ║");
             System.out.println("╠══════════════════════════════════════════════╣");
             System.out.println("║  Interceptores: " + cantidadDeInterceptores
-                    + " | Tiempo de recarga: " + tiempoDeEspera + "s        ║");
-            System.out.println("║  1 - Cambiar cantidad de interceptores        ║");
-            System.out.println("║  2 - Cambiar tiempo de recarga                ║");
-            System.out.println("║  3 - Configurar tiempo de las zonas           ║");
-            System.out.println("║  4 - Continuar                                ║");
-            System.out.println("║  5 - Volver al menú principal                 ║");
+                    + " | Tiempo de recarga: " + tiempoDeEspera + "s      ║");
+            System.out.println("║  1 - Cambiar cantidad de interceptores       ║");
+            System.out.println("║  2 - Cambiar tiempo de recarga               ║");
+            System.out.println("║  3 - Configurar tiempo de las zonas          ║");
+            System.out.println("║  4 - Continuar                               ║");
+            System.out.println("║  5 - Volver al menú principal                ║");
             System.out.println("╚══════════════════════════════════════════════╝");
             System.out.print("Opción (1/2/3/4/5): ");
 
@@ -134,7 +134,7 @@ public class Main {
     private static void menuZonas() {
         while (true) {
             System.out.println("╔══════════════════════════════════════════════╗");
-            System.out.println("║   CONFIGURACIÓN DE TICKS DESDE BASE POR ZONA  ║");
+            System.out.println("║   CONFIGURACIÓN DE TICKS DESDE BASE POR ZONA ║");
             System.out.println("╠══════════════════════════════════════════════╣");
 
             List<String> nombres = new ArrayList<>(RegistroDeZonas.ZONAS.keySet());
@@ -143,7 +143,7 @@ public class Main {
                 System.out.println("║  " + (i + 1) + " - " + z.getNombre()
                         + " (ticks actuales: " + z.getTicksDesdeBase() + ")");
             }
-            System.out.println("║  0 - Volver                                   ║");
+            System.out.println("║  0 - Volver                                  ║");
             System.out.println("╚══════════════════════════════════════════════╝");
             System.out.print("Seleccione la zona a modificar: ");
 

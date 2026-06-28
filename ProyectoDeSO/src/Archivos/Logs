@@ -1,96 +1,76 @@
 [5] M19 ha aparecido con objetivo Aeropuerto
-[6] Interceptor Interceptor - 1 asignado a M19
-[7] M8 ha aparecido con objetivo Hospital
-[8] Interceptor Interceptor - 2 asignado a M8
+[6] No es factible interceptar M19. Se ignora el misil.
+[6] M8 ha aparecido con objetivo Hospital
+[8] No es factible interceptar M8. Se ignora el misil.
 [11] M6 ha aparecido con objetivo CentralElectrica
 [11] M9 ha aparecido con objetivo Escuela
 [12] M2 ha aparecido con objetivo Hospital
-[12] Interceptor Interceptor - 3 asignado a M6
-[12] Interceptor Interceptor - 4 asignado a M2
-[12] Interceptor Interceptor - 5 asignado a M9
-[20] Interceptor - 2 interceptó a M8
-[21] M8 fue destruido antes de impactar en Hospital
-[21] Interceptor - 1 interceptó a M19
-[22] M19 fue destruido antes de impactar en Aeropuerto
-[24] Interceptor - 5 interceptó a M9
-[25] M9 fue destruido antes de impactar en Escuela
-[26] Interceptor - 3 interceptó a M6
-[27] M6 fue destruido antes de impactar en CentralElectrica
+[12] No es factible interceptar M9. Se ignora el misil.
+[12] No es factible interceptar M6. Se ignora el misil.
+[12] No es factible interceptar M2. Se ignora el misil.
+[19] M8 alcanzó su objetivo Hospital
+[20] M19 alcanzó su objetivo Aeropuerto
+[23] M9 alcanzó su objetivo Escuela
+[25] M6 alcanzó su objetivo CentralElectrica
 [28] M1 ha aparecido con objetivo Aeropuerto
-[29] Interceptor Interceptor - 1 asignado a M1
-[30] Interceptor - 4 interceptó a M2
-[31] M2 fue destruido antes de impactar en Hospital
+[29] M2 alcanzó su objetivo Hospital
+[29] No es factible interceptar M1. Se ignora el misil.
 [34] M24 ha aparecido con objetivo Aeropuerto
-[34] M4 ha aparecido con objetivo ZonaIndustrial
-[35] Interceptor Interceptor - 2 asignado a M24
+[35] M4 ha aparecido con objetivo ZonaIndustrial
+[35] M20 ha aparecido con objetivo CentralElectrica
+[35] No es factible interceptar M24. Se ignora el misil.
 [35] No es factible interceptar M4. Se ignora el misil.
-[36] M20 ha aparecido con objetivo CentralElectrica
-[37] Interceptor Interceptor - 3 asignado a M20
-[40] M4 alcanzó su objetivo ZonaIndustrial
-[44] Interceptor - 1 interceptó a M1
-[44] Interceptor - 3 interceptó a M20
-[44] Interceptor - 2 interceptó a M24
-[45] M1 fue destruido antes de impactar en Aeropuerto
-[45] M20 fue destruido antes de impactar en CentralElectrica
-[45] M24 fue destruido antes de impactar en Aeropuerto
+[35] No es factible interceptar M20. Se ignora el misil.
+[41] M4 alcanzó su objetivo ZonaIndustrial
+[42] M20 alcanzó su objetivo CentralElectrica
+[42] M24 alcanzó su objetivo Aeropuerto
+[43] M1 alcanzó su objetivo Aeropuerto
 [46] M3 ha aparecido con objetivo Hospital
+[46] No es factible interceptar M3. Se ignora el misil.
 [47] M7 ha aparecido con objetivo Datacenter
-[47] Interceptor Interceptor - 1 asignado a M3
-[47] Interceptor Interceptor - 2 asignado a M7
 [48] M12 ha aparecido con objetivo Aeropuerto
+[48] No es factible interceptar M7. Se ignora el misil.
+[48] No es factible interceptar M12. Se ignora el misil.
 [49] M10 ha aparecido con objetivo Hospital
-[49] Interceptor Interceptor - 3 asignado a M12
-[49] Interceptor Interceptor - 4 asignado a M10
-[59] Interceptor - 2 interceptó a M7
-[59] M7 fue destruido antes de impactar en Datacenter
+[50] No es factible interceptar M10. Se ignora el misil.
+[58] M7 alcanzó su objetivo Datacenter
 [60] M16 ha aparecido con objetivo Aeropuerto
-[62] Interceptor Interceptor - 2 asignado a M16
-[63] Interceptor - 4 interceptó a M10
-[63] Interceptor - 1 interceptó a M3
-[64] M3 fue destruido antes de impactar en Hospital
-[64] M10 fue destruido antes de impactar en Hospital
-[65] Interceptor - 3 interceptó a M12
-[65] M12 fue destruido antes de impactar en Aeropuerto
+[61] No es factible interceptar M16. Se ignora el misil.
+[62] M10 alcanzó su objetivo Hospital
+[62] M3 alcanzó su objetivo Hospital
+[64] M12 alcanzó su objetivo Aeropuerto
 [69] M5 ha aparecido con objetivo CentralElectrica
-[70] Interceptor Interceptor - 1 asignado a M5
-[73] M21 ha aparecido con objetivo Aeropuerto
-[74] Interceptor Interceptor - 3 asignado a M21
-[78] Interceptor - 1 interceptó a M5
-[79] M14 ha aparecido con objetivo Hospital
-[79] M5 fue destruido antes de impactar en CentralElectrica
-[79] Interceptor Interceptor - 1 asignado a M14
-[79] Interceptor - 2 interceptó a M16
-[80] M16 fue destruido antes de impactar en Aeropuerto
-[82] M17 ha aparecido con objetivo Escuela
+[70] No es factible interceptar M5. Se ignora el misil.
+[74] M21 ha aparecido con objetivo Aeropuerto
+[75] No es factible interceptar M21. Se ignora el misil.
+[77] M5 alcanzó su objetivo CentralElectrica
+[77] M16 alcanzó su objetivo Aeropuerto
+[78] M14 ha aparecido con objetivo Hospital
+[78] No es factible interceptar M14. Se ignora el misil.
 [82] M11 ha aparecido con objetivo CentralElectrica
+[82] No es factible interceptar M11. Se ignora el misil.
+[82] M17 ha aparecido con objetivo Escuela
 [83] M23 ha aparecido con objetivo CentralElectrica
-[83] Interceptor Interceptor - 2 asignado a M11
-[83] Interceptor Interceptor - 4 asignado a M23
-[83] Interceptor Interceptor - 5 asignado a M17
 [84] M22 ha aparecido con objetivo Aeropuerto
+[84] No es factible interceptar M17. Se ignora el misil.
+[84] No es factible interceptar M23. Se ignora el misil.
+[84] Interceptor Interceptor - 1 asignado a M22
 [86] M13 ha aparecido con objetivo Aeropuerto
-[89] Interceptor - 3 interceptó a M21
-[90] M21 fue destruido antes de impactar en Aeropuerto
-[90] Interceptor - 1 interceptó a M14
-[90] Interceptor Interceptor - 3 asignado a M13
-[91] M14 fue destruido antes de impactar en Hospital
-[91] Interceptor Interceptor - 1 asignado a M22
+[88] M14 alcanzó su objetivo Hospital
+[88] No es factible interceptar M13. Se ignora el misil.
+[89] M21 alcanzó su objetivo Aeropuerto
 [94] M15 ha aparecido con objetivo Datacenter
-[95] Interceptor - 5 interceptó a M17
-[96] M17 fue destruido antes de impactar en Escuela
-[96] Interceptor Interceptor - 5 asignado a M15
+[95] M17 alcanzó su objetivo Escuela
+[95] No es factible interceptar M15. Se ignora el misil.
 [96] M25 ha aparecido con objetivo Aeropuerto
-[99] M18 ha aparecido con objetivo Escuela
-[99] Interceptor - 2 interceptó a M11
-[100] M11 fue destruido antes de impactar en CentralElectrica
-[100] Interceptor Interceptor - 2 asignado a M25
-[100] Interceptor - 3 interceptó a M13
-[100] M13 fue destruido antes de impactar en Aeropuerto
+[97] No es factible interceptar M25. Se ignora el misil.
+[98] M11 alcanzó su objetivo CentralElectrica
+[100] M18 ha aparecido con objetivo Escuela
+[100] M13 alcanzó su objetivo Aeropuerto
 [101] No es factible interceptar M18. Se ignora el misil.
-[103] Interceptor - 4 interceptó a M23
-[104] M23 fue destruido antes de impactar en CentralElectrica
-[105] M18 alcanzó su objetivo Escuela
-[105] M25 alcanzó su objetivo Aeropuerto
-[105] M15 alcanzó su objetivo Datacenter
-[105] M22 alcanzó su objetivo Aeropuerto
+[101] M23 alcanzó su objetivo CentralElectrica
 [105] Interceptor - 1 interceptó a M22
+[106] M15 alcanzó su objetivo Datacenter
+[106] M18 alcanzó su objetivo Escuela
+[106] M22 fue destruido antes de impactar en Aeropuerto
+[109] M25 alcanzó su objetivo Aeropuerto
