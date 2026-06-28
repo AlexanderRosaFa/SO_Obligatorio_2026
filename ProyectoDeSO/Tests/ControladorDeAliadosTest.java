@@ -1,7 +1,6 @@
 package ProyectoDeSO.Tests;
 
 import Classes.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,6 +40,9 @@ public class ControladorDeAliadosTest {
 
         List<MisilEnemigo> misiles = new ArrayList<>();
 
+        // Nueva cola requerida por el constructor
+        ColaDePrioridad cola = new ColaDePrioridad("MENOR_TIEMPO");
+
         Zona zona = new Zona("Hospital", "ALTA", 10, 1);
 
         MisilEnemigo misil = new MisilEnemigo(
@@ -57,7 +59,8 @@ public class ControladorDeAliadosTest {
                         reloj,
                         estadisticas,
                         interceptores,
-                        misiles
+                        misiles,
+                        cola
                 );
 
         controlador.AsignarInterceptor(misil);
@@ -80,6 +83,9 @@ public class ControladorDeAliadosTest {
 
         List<MisilEnemigo> misiles = new ArrayList<>();
 
+        // Nueva cola requerida por el constructor
+        ColaDePrioridad cola = new ColaDePrioridad("MENOR_TIEMPO");
+
         /*
          * Distancia muy grande y poco tiempo.
          * No debería ser interceptable.
@@ -100,7 +106,8 @@ public class ControladorDeAliadosTest {
                         reloj,
                         estadisticas,
                         interceptores,
-                        misiles
+                        misiles,
+                        cola
                 );
 
         controlador.AsignarInterceptor(misil);
