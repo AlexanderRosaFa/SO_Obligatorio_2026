@@ -18,5 +18,6 @@ public class Zona {
     public String getCriticidad() { return criticidad; }
     public int getValorCriticidad() { return valorCriticidad; }
     public int getTicksDesdeBase() { return TicksDesdeBase; }
+    public void setTicksDesdeBase(int ticksDesdeBase) { this.TicksDesdeBase = ticksDesdeBase; }
 
 }
